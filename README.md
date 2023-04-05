@@ -1,0 +1,2 @@
+# django-one
+tdjt,hkhgxk
