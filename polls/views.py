@@ -49,6 +49,7 @@ class Result(QuestionDetail):
 #     return redirect(reverse('result',kwargs={'question_id': question_id}))
 
 class Vote(generic.View):
+
     def post(self, request, question_id):
         question = get_object_or_404(Question, id=question_id)
         choice_id = int(request.POST.get('choice'))
